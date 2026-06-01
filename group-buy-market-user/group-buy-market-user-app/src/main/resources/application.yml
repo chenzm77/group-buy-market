@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: group-buy-market-user
+  profiles:
+    active: dev
+
+server:
+  port: 8081
