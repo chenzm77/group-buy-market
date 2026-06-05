@@ -1,9 +1,10 @@
-package com.github.chenzm77.domain.user.service;
+package com.github.chenzm77.domain.user.service.impl;
 
 import com.github.chenzm77.domain.user.adapter.repository.IAddressRepository;
 import com.github.chenzm77.domain.user.adapter.repository.IUserRepository;
 import com.github.chenzm77.domain.user.model.entity.AddressEntity;
 import com.github.chenzm77.domain.user.model.entity.UserEntity;
+import com.github.chenzm77.domain.user.service.IAddressService;
 import com.github.chenzm77.types.common.Constants;
 import com.github.chenzm77.types.enums.ResponseCode;
 import com.github.chenzm77.types.exception.AppException;

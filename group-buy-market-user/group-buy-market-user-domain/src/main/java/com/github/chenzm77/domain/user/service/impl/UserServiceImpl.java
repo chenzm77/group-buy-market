@@ -1,7 +1,8 @@
-package com.github.chenzm77.domain.user.service;
+package com.github.chenzm77.domain.user.service.impl;
 
 import com.github.chenzm77.domain.user.adapter.repository.IUserRepository;
 import com.github.chenzm77.domain.user.model.entity.UserEntity;
+import com.github.chenzm77.domain.user.service.IUserService;
 import com.github.chenzm77.types.enums.ResponseCode;
 import com.github.chenzm77.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
