@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: group-buy-market-goods
+  profiles:
+    active: dev
+
+server:
+  port: 8093
