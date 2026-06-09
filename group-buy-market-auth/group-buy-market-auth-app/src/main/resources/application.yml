@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: group-buy-market-auth
+
+server:
+  port: 8082
+
+aliyun:
+  pnvs:
+    access-key-id: ${XXX}
+    access-key-secret: ${XXX}
+    endpoint: dypnsapi.aliyuncs.com
+    scheme-code: ${100001}
+    template-code: SMS_198470532
+
+auth:
+  cookie:
+    secure: true
+    same-site: Lax
+    domain: ${AUTH_COOKIE_DOMAIN:}
+
+dubbo:
+  application:
+    name: group-buy-market-auth
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20882
+  consumer:
+    check: false
+
+redisson:
+  config: |
+    singleServerConfig:
+      address: "redis://127.0.0.1:6379"
+      database: 0
