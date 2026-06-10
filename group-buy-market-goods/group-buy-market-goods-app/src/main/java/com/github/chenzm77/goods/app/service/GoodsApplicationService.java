@@ -22,6 +22,7 @@ import com.github.chenzm77.goods.domain.index.service.SpuIndexDomainService;
 import com.github.chenzm77.goods.domain.product.model.aggregate.Spu;
 import com.github.chenzm77.goods.domain.product.model.entity.Sku;
 import com.github.chenzm77.goods.domain.product.service.ProductDomainService;
+import org.apache.dubbo.rpc.RpcContext;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -46,6 +47,7 @@ public class GoodsApplicationService {
     private DomainEventPublisher domainEventPublisher;
 
     public ProductDetailDTO queryProductDetail(Long spuId) {
+
         Spu spu = productDomainService.getProductDetail(spuId);
         Activity activity = activityDomainService.getCurrentActivity(spuId);
         return toDetailDTO(spu, activity);

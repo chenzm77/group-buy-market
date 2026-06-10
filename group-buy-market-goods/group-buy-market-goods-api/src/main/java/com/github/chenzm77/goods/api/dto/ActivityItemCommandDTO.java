@@ -16,7 +16,9 @@ public class ActivityItemCommandDTO implements Serializable {
 
     private Long activityItemId;
     private Long activityId;
+    private Long spuId;
     private Long skuId;
+
     private Long seckillPrice;
     private Integer perUserLimit;
 }
