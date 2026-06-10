@@ -20,6 +20,9 @@ import java.util.List;
 @Service
 public class ProductDomainServiceImpl implements ProductDomainService {
 
+    /**
+     *
+     */
     @Resource
     private ProductRepository productRepository;
 
